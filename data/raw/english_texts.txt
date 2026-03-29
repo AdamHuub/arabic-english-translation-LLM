@@ -1,0 +1,30 @@
+##TEXT1##
+Artificial Intelligence (AI) is a field of computer science that focuses on creating machines capable of performing tasks that normally require human intelligence. 
+These tasks include understanding language, recognizing images, solving problems, and making decisions. AI systems are trained using large amounts of data, which help them learn patterns and improve over time. 
+One important branch of AI is machine learning, where algorithms learn from data instead of being explicitly programmed. 
+For example, an AI model can learn to recognize faces by analyzing thousands of images. AI is used in many everyday applications, 
+such as voice assistants, recommendation systems, and self-driving cars.Although AI is powerful, it still has limitations. It depends heavily on data quality and may produce incorrect results if not properly trained.
+
+##TEXT2##
+Programming is the process of giving instructions to a computer to perform specific tasks. 
+These instructions are written in programming languages such as Python, Java, or C++.
+A program is essentially a set of commands that the computer follows step by step.
+Programmers use logic and problem-solving skills to write efficient code. They must think carefully about how to break down a problem into smaller steps. 
+Debugging is also an important part of programming, where developers find and fix errors in their code. Programming is used to create software,
+ websites, mobile applications, and even AI systems. It is a fundamental skill in today’s digital world.
+
+##TEXT3##
+Machine learning is a technique that allows computers to learn from data without being explicitly programmed. Instead of writing rules manually,
+developers provide examples, and the algorithm learns patterns from them.For instance, to build a spam detection system,
+a model is trained using emails labeled as “spam” or “not spam.” Over time, the system learns to classify new emails based on patterns it has seen before. 
+There are different types of machine learning, including supervised learning, unsupervised learning, and reinforcement learning. Each type is used for different kinds of problems. Machine learning is widely used in fields like healthcare, finance, and technology.
+
+##TEXT4##
+Artificial Intelligence is transforming modern medicine in remarkable ways. Today, AI systems can analyze medical images—such as X-rays, MRIs, and CT scans—with impressive accuracy. In some cases, these systems even outperform human doctors in detecting early signs of disease.
+For example, AI can help identify tumors at an early stage, when treatment is more effective. Moreover, it can assist doctors by suggesting possible diagnoses based on patient data. However, AI does not replace physicians; instead, it acts as a powerful support tool.
+Despite its advantages, challenges remain. Issues like data privacy, ethical concerns, and the need for reliable datasets must be carefully addressed before AI can be fully integrated into healthcare systems.
+
+##TEXT5##
+Developing new drugs is a long, expensive, and complex process—often taking more than 10 years. Recently, AI has begun to accelerate this process by analyzing massive datasets of chemical compounds and biological interactions.
+Machine learning models can predict how a molecule will behave in the human body; they can also identify potential side effects before clinical trials begin. This reduces both time and cost significantly.
+However, these predictions are not always perfect. Scientists must still validate results through laboratory experiments. In this way, AI acts as a guide rather than a final decision-maker , NEW YORK .
