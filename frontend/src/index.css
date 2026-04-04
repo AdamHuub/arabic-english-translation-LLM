@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800;900&family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap');
+
+:root {
+  --bg: #07090f;
+  --card: #101423;
+  --border: rgba(255, 255, 255, 0.08);
+
+  --neon-blue: #00BFFF;
+  --neon-green: #00FF99;
+
+  --text-1: #ffffff;
+  --text-2: #8a93a6;
+  --text-3: #525a70;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --transition: all 0.25s ease;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text-1);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.arabic-font {
+  font-family: 'Tajawal', 'Cairo', sans-serif;
+  direction: rtl;
+  text-align: right;
+  line-height: 1.4;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
