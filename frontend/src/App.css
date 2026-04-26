@@ -459,8 +459,13 @@
 }
 
 @keyframes fadeCross {
-  0% { opacity: 0.4; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes tickerSlide {
@@ -846,12 +851,14 @@
 }
 
 .info-footer-status {
-  padding: 20px 40px;
-  background: rgba(0, 191, 255, 0.05);
-  border-top: 1px solid rgba(0, 191, 255, 0.1);
-  font-size: 10px;
-  letter-spacing: 2px;
-  color: var(--neon-blue);
-  font-weight: 800;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--neon-green);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   text-align: center;
 }

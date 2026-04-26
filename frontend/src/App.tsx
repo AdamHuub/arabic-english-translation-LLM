@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import Trailer from './Trailer'
 import './App.css'
 
-type PromptType = 'scientific' | 'standard' | 'creative' | 'detailed' | 'chain_of_thought' | 'auto_detect' | 'with_confidence';
+type PromptType = 'scientific' | 'standard' | 'creative' | 'detailed' | 'V1' | 'V2' | 'V3' | 'V4' | 'V5' | 'V6' | 'V7' | 'V8' | 'V9' | 'V10';
 type BotState = 'idle' | 'thinking' | 'talking';
 type LangCode = 'Arabic' | 'English';
 
@@ -93,7 +93,7 @@ export default function App() {
   const [sourceLang, setSourceLang] = useState<LangCode>('Arabic');
   const targetLang = useMemo(() => sourceLang === 'Arabic' ? 'English' : 'Arabic', [sourceLang]);
 
-  const [promptType, setPromptType] = useState<PromptType>('scientific');
+  const [promptType, setPromptType] = useState<PromptType>('V9');
   const [showHistory, setShowHistory] = useState(false);
   const [history, setHistory] = useState<HistoryItem[]>([]);
   const [toast, setToast] = useState('');
@@ -185,15 +185,15 @@ export default function App() {
     setTimeout(() => {
       const currentInput = inputText;
       const currentOutput = translatedText;
-      
+
       // Since targetLang is a useMemo based on sourceLang, 
       // we only need to flip sourceLang.
       setSourceLang(prev => (prev === 'Arabic' ? 'English' : 'Arabic'));
       setInputText(currentOutput);
       setTranslatedText(currentInput);
-      
+
       setIsSwapping(false);
-      
+
       // Auto-focus input after swap for efficiency
       setTimeout(() => inputRef.current?.focus(), 50);
     }, 400); // Matches CSS 0.4s animation
@@ -361,6 +361,8 @@ export default function App() {
             <textarea
               ref={inputRef}
               className={`text-area ${sourceLang === 'Arabic' ? 'arabic-font' : ''}`}
+              dir={sourceLang === 'Arabic' ? 'rtl' : 'ltr'}
+              value={inputText}
               onChange={e => {
                 setInputText(e.target.value);
                 if (!e.target.value.trim()) setTranslatedText('');
@@ -436,13 +438,7 @@ export default function App() {
       </div>
 
       <div className="footer-actions">
-        <select className="mode-select" value={promptType} onChange={e => setPromptType(e.target.value as PromptType)}>
-          <option value="scientific">Academic / Scientific</option>
-          <option value="standard">Standard Conversation</option>
-          <option value="creative">Creative / Literary</option>
-          <option value="detailed">Detailed Analysis</option>
-        </select>
-        <div style={{ color: 'var(--text-3)', fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>POWERED BY RAYYA ARTIFICIAL INTELLIGENCE</div>
+
       </div>
 
       {showHistory && (

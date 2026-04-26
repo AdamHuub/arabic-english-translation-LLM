@@ -1,0 +1,120 @@
+# Plan du Rapport pour le projet Arabic-English Translation LLM (Max 10 Pages)
+
+## 1. Introduction
+- Contexte: Importance de la traduction Arabe-Anglais a l'ere de l'IA.
+- Objectifs du projet: Developper un systeme de traduction performant utilisant les LLM (Gemini) avec une interface fluide.
+
+## 2. Etude Theorique (Definitions)
+- Intelligence Artificielle (IA) et Deep Learning.
+- Large Language Models (LLM): Architecture Transformers, mecanisme d'Attention.
+- Natural Language Processing (NLP).
+- Metriques d'evaluation: Le score BLEU (Bilingual Evaluation Understudy).
+
+## 3. Audit Technologique
+- Backend: FastAPI (Python), REST API, Uvicorn.
+- Intelligence Artificielle: Google Gemini SDK (google-generativeai).
+- Frontend: Vite, React, TypeScript, Modern UI.
+- Bibliotheques d'evaluation: NLTK, SacreBLEU, Pandas, Matplotlib.
+
+## 4. Architecture du Systeme
+- Architecture Client-Serveur.
+- Workflows de traduction: Simple request vs Streaming (temps reel).
+- Gestion des prompts: Ingenierie de prompts specialises (Scientifique vs Creatif).
+
+## 5. Ingenierie de Prompts (Prompt Engineering)
+- Details techniques des prompts utilises dans translation/prompts.py.
+- Strategies de filtrage et formatage des sorties.
+
+## 6. Pretraitement et Donnees
+- Methodes d'extraction de texte.
+- Nettoyage des donnees (Arabic/English).
+- Statistiques sur le corpus (Data counting).
+
+## 7. Evaluation de la Performance (BLEU Score)
+- Details de l'implementation de TranslationEvaluator.
+- Resultats obtenus et analyse de la correlation avec la perception humaine.
+
+## 8. Interface Utilisateur (Frontend & API)
+- Presentation de l'UI (Dashboard).
+- Interactivite et UX (Real-time Streaming).
+
+## 9. Conclusion
+- Defis rencontres.
+- Perspectives d'amelioration (fine-tuning, support d'autres langues).
+
+---
+
+## Code de Structure LaTeX Propose
+
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{amsmath}
+
+\geometry{margin=2.5cm}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\lstdefinestyle{mystyle}{
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    showspaces=false,
+}
+\lstset{style=mystyle}
+
+\title{
+    \textbf{Systeme Avance de Traduction Arabe-Anglais base sur les LLM}\\
+    \large{Audit Technologique, Implementation et Evaluation BLEU}
+}
+\author{Team AdamHuub}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\chapter{Introduction}
+... (Contenu detaille dans le rapport)
+
+\chapter{Fondements Theoriques}
+\section{Intelligence Artificielle et LLM}
+...
+
+\chapter{Audit Technologique}
+\section{Stack Logicielle (Audit Complet)}
+...
+
+\chapter{Implementation Technique}
+\section{Ingenierie de Prompts}
+...
+
+\chapter{Analyse des Donnees et Qualite}
+\section{Quantite et Extraction}
+...
+\section{Resultats BLEU}
+...
+
+\chapter{Interface Utilisateur (UI/API)}
+...
+
+\chapter{Conclusion}
+...
+
+\end{document}

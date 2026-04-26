@@ -4,17 +4,17 @@ from dotenv import load_dotenv
 # Charger les variables d'environnement
 load_dotenv()
 
-# --- CONFIGURATION API ---
-API_KEY = os.getenv("GEMINI_API_KEY")
-MODEL_NAME = "gemini-2.5-flash"
+# Choix du fournisseur d'IA : "gemini" ou "groq"
+AI_PROVIDER = "gemini"
 
-# --- PARAMÈTRES DE TRADUCTION ---
-DEFAULT_SOURCE_LANG = "English"
-DEFAULT_TARGET_LANG = "Arabic"
+# Configuration API Gemini
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_MODEL = "gemini-2.5-flash"
 
-# --- RESSOURCES NLTK ---
-NLTK_RESOURCES = ["punkt"]
+# Configuration API Groq
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_MODEL = "llama-3.3-70b-versatile"
 
-# --- GESTION DES ERREURS ---
-if not API_KEY:
-    print("ATTENTION : GEMINI_API_KEY non trouvée dans le fichier .env")
+# Configuration des langues par défaut
+DEFAULT_SOURCE_LANG = "arabe"
+DEFAULT_TARGET_LANG = "anglais"

@@ -1,0 +1,17 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+.ruff_cache/
+.sixth/
+node_modules/
+dist/
+build/
+.DS_Store
+translation_debug.log
+python-3.11.exe
+res
+results/
+preprocessing/output.txt
+preprocessing/text.txt
+preprocessing/tsks.txt
